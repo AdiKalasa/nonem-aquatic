@@ -1,0 +1,36 @@
+nama?
+basit
+abit
+
+basit aquatic
+ganti ide?
+kalo tetep ba, faktor bikin ragu:
+foto ikan, takut plagiarisme
+fitur login buat apa, admin doang?
+fitur login bisa buat customer fungsinya jika ada stok baru bisa dikabari lewat email
+
+discus fish ref di tokped toko Royal Jakart Official
+
+yg ada cap 1 itu toko myrimbarimba
+
+logo by brand crowd (not free)
+
+color pallete:
+446aab
+
+card-cat
+kalo dia diclick ambil page main
+minus:..
+
+alur 
+
+
+=============== TODO ================
+misahin func js ke file terpisah sesuai pages nya
+
+=============== IDEAS ================
+detail ada componen baru yaitu cek panduan perawatan disini
+pas diklik lari ke perawatan masuk query jenis ikannya
+detail ikan beda ikan beda link wa(querynya)
+Tips perawatan akuarium dan komponen lainnya
+link beli query tambain mau beli berapa

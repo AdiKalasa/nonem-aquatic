@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* padding: 10px; */
+  /* background-color: #0F1035; */
+  font-family: tahoma;
+  margin: 0;
+  background-color: hsl(218, 43%, 47%);
+}
+
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.nyala {
+  background-color: hsl(218, 43%, 47%);
+}
+
+select:hover{
+  cursor: pointer;
+}
+select{
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .card-catalog,.terlaris div {
+    width: 21%;
+  }
+  .kegiatan .card-catalog{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .funfact-img{
+    float: left;
+    max-width: 600px !important;
+    margin-right: 5px;
+  }
+  .funfact-img+p{
+    display: inline;
+    /* color: red; */
+  }
+}
+
+/* pop in out*/
+
+.pop-in{
+  animation: pop-in 0.05s ease-in;
+}
+.pop-out{
+  animation: pop-out 0.1s ease-out;
+}
+@keyframes pop-in {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes pop-out {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0.1);
+  }
+}

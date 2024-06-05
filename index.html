@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .base{
+        text-align: center;
+       }
+       .base div{
+        font-size: 2rem;
+        border-radius: 5px;
+        background-color: skyblue;
+    }
+    .base button{
+        border: none;
+        border-radius: 5px;
+        padding: 0;
+        padding-bottom: 5px;
+        background-color: tomato;
+       }
+    .base button:hover div{
+        background-color: hsl(197, 71%, 63%);
+    }
+    
+    .base button:active{
+        background-color: hsl(197, 71%, 63%);       
+    }
+    </style>
+</head>
+<body>
+    <div class="base">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, obcaecati eius! Laboriosam quam, iste commodi in nemo rerum harum porro sapiente enim debitis mollitia totam molestias maiores sint nostrum saepe!</p>
+        <button onclick="clicked()">
+            <div>
+                Click me
+            </div>
+        </button>
+    </div>
+
+    <script>
+        function clicked(){
+            console.log('yes');
+        }
+    </script>
+</body>
+</html>
