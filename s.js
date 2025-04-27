@@ -15,9 +15,9 @@ module.exports = io;
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'ine.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 server.listen(port, () => {
-    console.log(`dah nyala ${port}!!`);
+    console.log(`Buka chrome..\nketik linknya "localhost:${port}"`);
 });

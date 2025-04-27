@@ -1,0 +1,291 @@
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: hsl(218, 43%, 57%);
+  /* padding-left: 20px; */
+  box-shadow: 1px 1px 5px black;
+  margin-bottom: 100px;
+}
+.card {
+  background-color: hsl(218, 43%, 57%);
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 1px 1px 5px black;
+}
+.rightcolumn .card, .leftcolumn .card{
+  background-color: hsl(218, 43%, 87%);
+  /* background: linear-gradient(hsl(218, 43%, 87%), hsl(218, 43%, 77%)); */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card iframe {
+  width: 100%;
+}
+
+marquee {
+  color: white;
+}
+.card h1 {
+  padding: 5px;
+  text-shadow: 1px 1px 3px white;
+  cursor: default;
+  /* color: hsl(177, 46%, 81%); */
+  color: black;
+  border-bottom: 1px solid;
+}
+.card h2{
+  padding: 10px;
+  background-color: hsl(218, 43%, 77%);
+  box-shadow: 1px 1px 5px black;
+  border-radius: 10px;
+  font-weight:600;
+}
+.card .berita{
+  padding: 10px;
+  background-color: hsl(218, 43%, 82%);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.funfact{
+  min-height: 550px;
+}
+/**
+  fitur Katalog ikan
+
+*/
+.catalog, .kegiatan{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-catalog {
+  background-color: hsl(218, 43%, 87%);
+  box-shadow: 1px 1px 5px black;
+  text-align: center;
+  width: 30%;
+  padding-top: 20px 10px 0px 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.25s;
+  overflow-x: hidden;
+}
+.kegiatan .card-catalog{
+  width: 48%;
+}
+.title-catalog, .judul-kegiatan{
+  padding: 0px 3px;
+}
+.img-catalog {
+  margin-top: 10px;
+  width: 110px;
+  box-shadow: 1px 2px 5px black;
+}
+.img-kegiatan{
+  width: 100%;
+  box-shadow: 1px 2px 5px black;
+}
+.date-kegiatan{
+  margin-top: 0;
+  font-size: 0.85rem;
+}
+
+.enable-cc:hover, .enable-cc:active {
+  transform: scale(1.05);
+  background-color:  hsl(218, 43%, 97%);
+}
+
+/* Fish detail utk inspect ikan*/
+.fish-detail, .food-detail{
+  /* height: 80vh; */
+  width: 400px;
+  box-shadow: 1px 2px 5px black;
+  background-color: hsl(218, 43%, 77%);
+  position: fixed;
+  left: 10vw;
+  top: 10vh;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.fish-detail button, .food-detail button{
+  position: fixed;
+  margin-left: 350px;
+  margin-bottom: 300px;
+  font-size: 1.2rem;
+}
+.fish-detail button:hover, .food-detail button:hover{
+  cursor: pointer;
+}
+.fish-detail img, .food-detail img{
+  width: 200px;
+  box-shadow: 1px 2px 3px black;
+}
+.fish-detail table, .food-detail table{
+  text-align: left;
+}
+.fish-detail select{
+  background-color: hsl(218, 43%, 87%);
+}
+
+.beli{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.beli img{
+  width: 25px;
+  margin-right: 5px;
+}
+.beli a{
+  padding-top: 0px;
+  font-size: 1.2rem;
+  display: flex;
+}
+.home img{
+  width: 100%;
+
+}
+.sosmed{
+  margin-bottom: 10px;
+}
+.sosmed img{
+  width: 25px;
+  margin-right: 5px;
+}
+.card .sosmed a{
+  padding-top: 0px;
+  font-size: 1.2rem;
+  display: flex;
+
+}
+
+/* perawatan page */
+.perawatan .slider button:hover, .perawatan .slider button:active{
+  cursor: pointer;
+  background-color: hsl(0, 0%, 70%);
+}
+
+.perawatan .jenis, .perawatan .slider{
+  text-align: center;
+}
+.perawatan h2{
+  background-color: hsl(218, 43%, 77%);
+  padding: 10px;
+}
+.perawatan select{
+  font-size: 1.2rem;
+}
+
+.funfact-img{
+  box-shadow: 1px 2px 3px black;
+  max-height: 400px;
+  width: 600px;
+  max-width: 600px;
+}
+
+
+
+
+div.slider-img {
+  box-shadow: 1px 2px 3px black;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.slider-img img {
+  width: 300px;
+  position: relative;
+}
+.slider-img img.main {
+  left: 150px;
+}
+.slider-img img.sec {
+  left: 150px;
+  /* display: none; */
+}
+.slider {
+  margin:0 auto;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider button {
+  transition: 0.25s;
+  position: relative;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  z-index: 5;
+}
+.img-rm {
+  animation: slid-rm 1s ease;
+}
+.img-rs {
+  animation: slid-rs 1s ease;
+}
+.img-lm {
+  animation: slid-lm 1s ease;
+}
+.img-ls {
+  animation: slid-ls 1s ease;
+}
+.slider button#l{
+  left: 22px;
+}
+.slider button#r{
+  left: -22px;
+}
+.slider button:hover{
+  box-shadow: 1px 1px 5px white;
+}
+
+@keyframes slid-rm {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slid-rs {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slid-lm {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slid-ls {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(-600px);
+  }
+}

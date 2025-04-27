@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Nonem Aquatic</title>
+    <link rel="stylesheet" type="text/css" href="./css/top.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/mid.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/bot.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/global.css"/>
+    <link rel="icon" href="./.gambar/logo etc/log.png">
+</head>
+
+<body>
+    <div class="header">
+        <img src="./.gambar/logo etc/header.png" width="100%" height="230px" />
+    </div>
+
+    <div id="navbar">
+        <a href="index.html" id="home-page">Home</a>
+        <!-- <a href="index.php?page=katalog" id="katalog-page">Katalog</a> -->
+        <div class="dropdown">
+            <button class="dropbtn" onmouseenter="geserAtas()">Katalog</button>
+            <div id="myDropdown" class="dropdown-content">
+                <ul><a href="katikan.html" id="katikan-page" class="sub-nav">Ikan</a></ul>
+                <ul><a href="index.php?page=katumpan" id="katumpan-page" class="sub-nav">Keperluan</a></ul>
+            </div>
+        </div>
+        <a href="index.html?page=perawatan" id="perawatan-page">Perawatan</a>
+        <a href="index.php?page=kegiatan" id="kegiatan-page">Kegiatan</a>
+        <span id="spanme"></span>
+    </div>
+    <marquee id="pemberitahuan1"></marquee>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="fish-detail">
+                <button onclick="tutupFishDetail()" class="tutup-detail">X</button>
+                <img src="./.gambar/ikan/caviat silver.jpg" id="fd-img">
+                <div id="fd-desc">
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>:</td>
+                            <td id="fd-name">default</td>
+                        </tr>
+                        <tr>
+                            <th>Makanan</th>
+                            <td>:</td>
+                            <td id="fd-food">default</td>
+                        </tr>
+                        <tr>
+                            <th>Ukuran</th>
+                            <td>:</td>
+                            <td>
+                                <select id="fd-size" onchange="ubahInfo(this)">
+                                    <option value="2000">default</option> 
+                                </select>   
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Harga</th>
+                            <td>:</td>
+                            <td id="fd-price">default</td>
+                        </tr>
+                        <tr>
+                            <th>Tersedia</th>
+                            <td>:</td>
+                            <td id="fd-stok">default</td>
+                        </tr>
+                    </table>
+                    
+                    <div class="beli">
+                        <a href="https://api.whatsapp.com/send?phone=6281584872770&text=Halo+Ikan" target="_blank" id="fd-linkbeli">
+                            <img src=".gambar/logo etc/wa.png" alt=""> Pesan sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-detail">
+                <button onclick="tutupFoodDetail()" class="tutup-detail">X</button>
+                <img src=".gambar/ikan/caviat silver.jpg" id="fd-img">
+                <div id="fd-desc">
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>:</td>
+                            <td id="fd-name">default</td>
+                        </tr>
+                        <tr>
+                            <th>Harga</th>
+                            <td>:</td>
+                            <td id="fd-price">default</td>
+                        </tr> 
+                        <tr>
+                            <th>Tersedia</th>
+                            <td>:</td>
+                            <td id="fd-stok"></td>
+                        </tr>
+                        <tr>
+                            <th>Keterangan</th>
+                            <td>:</td>
+                            <td id="fd-info"></td>
+                        </tr>
+                    </table>
+                    <div class="beli">
+                        <a href="https://api.whatsapp.com/send?phone=6281584872770&text=Halo+Ikan" target="_blank" id="fd-linkbeli">
+                            <img src=".gambar/logo etc/wa.png" alt=""> Pesan sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="mainpage">
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h1>Tentang Kami</h1>
+                <p id="tentangkami"></p>
+            </div>
+            <div class="card">
+                <h1>Lokasi</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.9481789541348!2d106.92799413410609!3d-6.277355214482413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d4727154cf3%3A0x1a7291c8a46dad85!2sKomplek%20AL%20Jatimakmur!5e0!3m2!1sid!2sid!4v1715402633143!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="card">
+                <h1>Sosial Media</h1>
+                <p>Ikuti kami diberbagai sosial media:</p>
+                <div class="sosmed">
+                    <a href="https://www.instagram.com/angka1sampe8?igsh=cnI4eWc2cnVxNjFx" target="_blank"><img src="./.gambar/logo etc/ig.png" alt="">Instagram</a>
+                </div>
+                <div class="sosmed">
+                    <a href="https://www.instagram.com/angka1sampe8?igsh=cnI4eWc2cnVxNjFx" target="_blank"><img src="./.gambar/logo etc/tel.png" alt="">Telegram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://api.whatsapp.com/send?phone=6281584872770&text=Halo+Ikan" target="_blank">
+            <img src="./.gambar/logo etc/wa.png" alt="">
+        </a>
+        <!-- wa.me/6281584872770?text=Halo -->
+        <p>Copyright &copy; Nonem Aquatic 2024</p>
+    </div>
+    <script src="./js/aksi.js"></script>
+    <script src="./js/katalog.js"></script>
+    <script src="./js/kegiatan.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./database.js"></script>
+</body>
+
+
+</html>
