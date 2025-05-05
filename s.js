@@ -12,10 +12,10 @@ const io = socketIo(server);
 module.exports = io;
 
 // Middleware untuk menghidangkan berkas statis dari folder "public"
-app.use(express.static(path.join(__dirname, 'publicbrowny')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'publicbrowny', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'testDS.html'));
 });
 
 server.listen(port, () => {
